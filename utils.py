@@ -6,7 +6,8 @@ from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 from tensorflow.keras.models import load_model
 
 # load the saved fine-tuned model
-model = load_model("mobilenet_v2_finetuned.h5")
+model = load_model("mobilenet_v2_finetuned_fix.h5", compile=False)
+
 
 class_labels = ['Angry', 'Happy', 'Neutral', 'fear', 'disgust']
 
